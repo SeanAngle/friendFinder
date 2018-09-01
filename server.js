@@ -22,16 +22,16 @@ var friend1 =
         name: "John Kim",
         picture: "https://www.thelocal.de/userdata/images/article/fa6fd5014ccbd8f4392f716473ab6ff354f871505d9128820bbb0461cce1d645.jpg",
         scores: [
-            1,
-            3,
-            2,
             5,
-            3,
+            4,
+            2,
             2,
             1,
             2,
-            3,
-            4
+            1,
+            1,
+            5,
+            3
         ]
     };
 var friend2 =
@@ -39,24 +39,43 @@ var friend2 =
         name: "Mike Soto",
         picture: "http://animals.sandiegozoo.org/sites/default/files/2016-11/animals_hero_koala02%20copy.jpg",
         scores: [
-            3,
             2,
-            4,
+            5,
             3,
-            2,
-            4,
             3,
-            2,
+            5,
             1,
-            4
+            4,
+            3,
+            1,
+            2
         ]
     };
 
 friend.addFriend(friend1);
 friend.addFriend(friend2);
 
+// Routes
+app.get("/survey", function(req, res){
+    res.sendFile(path.join(__dirname, "./app/public/survey.html"));
+});
 
+app.get("/", function(req, res){
+    res.sendFile(path.join(__dirname, "./app/public/home.html"));
+});
 
+app.get("/api/friends", function(req, res){
+    // var output = friends.returnFriends();
+    return res.json(friend.returnFriends());
+});
+
+app.post("/api/friends", function(req, res){
+    var newFriend = req.body;
+
+    // Return the best match
+    res.json(friend.getMatch(newFriend));
+
+});
 
 
 // Starts the server to begin listening
