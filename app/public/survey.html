@@ -183,7 +183,7 @@
 
     <!-- Javascript specific to the page -->
     <script type="text/javascript">
-        // Function to make sure all questions are answered.
+        // Function to make sure all questions are answered
         function checkAnswered(){
             var isAnswered = true;
             $(".form-control").each(function(){
@@ -196,7 +196,7 @@
         // Submit total form with click of the submit button
         $("#submit").on("click", function(event){
             event.preventDefault();
-            // Check that everything is answered
+            // Make sure all answers are answered
             if(checkAnswered){
                 // Create new friend object using the user input
                 var newFriend = {

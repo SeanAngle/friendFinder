@@ -9,7 +9,7 @@ var Friends = require("./app/data/friends");
 var app = express();
 var PORT = process.env.PORT || 3000;
 
-// Sets up the Express app to handle data parsing
+// Sets up the Express app to handle data
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -20,7 +20,7 @@ var friend = new Friends();
 var friend1 =
     {
         name: "John Kim",
-        picture: "https://www.thelocal.de/userdata/images/article/fa6fd5014ccbd8f4392f716473ab6ff354f871505d9128820bbb0461cce1d645.jpg",
+        picture: "https://avatars1.githubusercontent.com/u/37681607?s=460&v=4",
         scores: [
             5,
             4,
@@ -37,7 +37,7 @@ var friend1 =
 var friend2 =
     {
         name: "Mike Soto",
-        picture: "http://animals.sandiegozoo.org/sites/default/files/2016-11/animals_hero_koala02%20copy.jpg",
+        picture: "https://avatars2.githubusercontent.com/u/40866355?s=460&v=4",
         scores: [
             2,
             5,
