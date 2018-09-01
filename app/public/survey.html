@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h2>Survey</h2>
+        <hr>
+        <form action="">
+            <!-- Personal info input -->
+            <h4>Name (Required)</h4>
+            <input class="form-control" type="text" id="name">
+            <h4>Link to Photo Image (Required)</h4>
+            <input class="form-control" type="text" id="photo">
+            <br>
+            <br>
+
+            <!-- Survey Questions -->
+            <div class="form-group">
+                <label for="question1">You would rather read a book than do something outside.</label>
+                <select class="form-control" id="question1">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question2">You like traveling rather than stay in one spot your whole life.</label>
+                <select class="form-control" id="question2">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question3">You are the one who starts a conversation when you're out with friends.</label>
+                <select class="form-control" id="question3">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question4">You would rather be at a party than at home watching a movie</label>
+                <select class="form-control" id="question4">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question5">You would rather text than talk on the phone.</label>
+                <select class="form-control" id="question5">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question6">You would rather have a dog over a cat.</label>
+                <select class="form-control" id="question6">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question7">You are a half glass full rather than a glass half empty.</label>
+                <select class="form-control" id="question7">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question8">You are the first one on the dance floor.</label>
+                <select class="form-control" id="question8">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question9">When you don't understand something you ask for help.</label>
+                <select class="form-control" id="question9">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question10">You are a morning person.</label>
+                <select class="form-control" id="question10">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+        </form>
+    </div>
+    <br>
+    <br>
+
+    <!-- Modal -->
+    <div class="modal fade" id="friendResult" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">This Is Your Match!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                    <img class="card-img-top" src="" alt="Card image cap" id="friendPicture">
+                <h5 id="friendName"></h5>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <a href="/api/friends">API Friends List</a> | <a href="https://github.com/whoisjohnkim/friendFinder">Github Repo</a>
+        </div>
+    </footer>
+    <br>
+    <br>
+
+    <!-- Bootstrap script -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <!-- Javascript specific to the page -->
+    <script type="text/javascript">
+        // Function to make sure all questions are answered.
+        function checkAnswered(){
+            var isAnswered = true;
+            $(".form-control").each(function(){
+                if($(this).val() === "") {
+                    isAnswered = false;
+                };
+            })
+            return isAnswered;
+        }
+        // Submit total form with click of the submit button
+        $("#submit").on("click", function(event){
+            event.preventDefault();
+            // Check that everything is answered
+            if(checkAnswered){
+                // Create new friend object using the user input
+                var newFriend = {
+                    name: $("#name").val(),
+                    picture: $("#photo").val(),
+                    scores: [
+                        $("#question1").val(),
+                        $("#question2").val(),
+                        $("#question3").val(),
+                        $("#question4").val(),
+                        $("#question5").val(),
+                        $("#question6").val(),
+                        $("#question7").val(),
+                        $("#question8").val(),
+                        $("#question9").val(),
+                        $("#question10").val()
+                    ]
+                }
+                // AJAX request
+                $.post("/api/friends", newFriend, function(data) {
+                    console.log(data);
+                    $("#friendPicture").attr("src", data.picture);
+                    $("#friendName").text(data.name);
+                    // Show modal
+                    $("#friendResult").modal("toggle");
+                });
+            }else{
+                alert("Please answer all questions!")
+            }
+        })
+    </script>
+</body>
+</html>
